@@ -1,0 +1,44 @@
+{
+  "avoid_bad_polys": true, 
+  "point_clouds" :
+  {
+    "buildings" : "/home/wilai/files_city4CFD/real_building.ply"
+  },
+  "polygons" : [
+    {
+      "type": "Building",
+      "path": "/home/wilai/files_city4CFD/build.geojson",
+      "unique_id": "gid"
+    }
+  ],
+
+  "point_of_interest": [568085, 6811855],
+  "influence_region": 600,
+  
+  "domain_bnd":         1000,
+  "top_height":         300,
+
+  "bnd_type_bpg":      "Rectangle",
+  "bpg_blockage_ratio": true,        
+  "flow_direction":     [1, 1],
+  "buffer_region":      20,
+  "reconstruct_boundaries": true,
+
+  "terrain_thinning": 10,
+  "smooth_terrain":   {
+    "iterations": 1,
+    "max_pts": 100000
+  },
+  
+  "lod": "1.2",
+  "building_percentile": 90,
+
+  "edge_max_len": 5,
+
+  "output_file_name":  "Mesh",
+  "output_format":     "obj",
+  "output_separately":  true,
+
+  "output_log": true,
+  "log_file": "logFile.log"
+}
